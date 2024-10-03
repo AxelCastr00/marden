@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <script defer src="./js/carrito.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>¡Regístrate y llévate un 10% de descuento en tu primera compra! <a href="#">Regístrate</a></p>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="./img/mardenLogo1.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Busca tu producto">
+                <button>🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="tshirt.png" alt="Gradient Graphic T-shirt">
+                    <div class="item-details">
+                        <p>Gradient Graphic T-shirt</p>
+                        <p>Size: Large</p>
+                        <p>Color: White</p>
+                        <p>$145</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">🗑️</button>
+                </div>
+                <div class="cart-item">
+                    <img src="shirt.png" alt="Checkered Shirt">
+                    <div class="item-details">
+                        <p>Checkered Shirt</p>
+                        <p>Size: Medium</p>
+                        <p>Color: Red</p>
+                        <p>$180</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">🗑️</button>
+                </div>
+                <div class="cart-item">
+                    <img src="jeans.png" alt="Skinny Fit Jeans">
+                    <div class="item-details">
+                        <p>Skinny Fit Jeans</p>
+                        <p>Size: Large</p>
+                        <p>Color: Blue</p>
+                        <p>$240</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">🗑️</button>
+                </div>
+            </div>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p>Subtotal: <span id="subtotal">$565</span></p>
+                <p>Discount (20%): <span id="discount">-$113</span></p>
+                <p>Delivery Fee: <span id="delivery-fee">$15</span></p>
+                <p>Total: <span id="total">$467</span></p>
+                <input type="text" placeholder="Add promo code">
+                <button class="apply-btn">Apply</button>
+                <button class="checkout-btn">Go to Checkout</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Productos</h3>
+                <ul>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Buzos</a></li>
+                    <li><a href="#">Cargos</a></li>
+                    <li><a href="#">Remeras</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>marden@gmail.com</p>
+                <p>2434324324324</p>
+            </div>
+            <div class="footer-social">
+                <h3>Nuestras redes</h3>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
