@@ -1,0 +1,70 @@
+/* Importa la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Copperplate+Gothic+Bold&display=swap');
+
+.flyer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 900px;
+    height: 400px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.text-section {
+    flex: 1;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 80px;
+    color: #ff9180;
+    letter-spacing: 5px;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.sub-title {
+    font-size: 60px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.image-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flyer-image {
+    width: 350px;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.flyer-container:hover .flyer-image {
+    transform: scale(1.05);
+}
+
+.flyer-container:hover .main-title {
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+.flyer-container:hover .sub-title {
+    transform: translateY(10px);
+    opacity: 0.8;
+}
